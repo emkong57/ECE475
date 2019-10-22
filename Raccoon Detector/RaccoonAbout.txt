@@ -1,0 +1,9 @@
+'raccoon.kmodel' needs to be loaded onto either an sd card or onboard flash memory using kflash GUI.
+- If loading model onto flash memory, confirm address in 'raccoon_detector.py' on line 12 ("task = kpu.load(~0xADDR~)") matches the address in kflash GUI (default 0x600000).
+- If using sd card, copy 'raccoon.kmodel' to sd card and slot into board.
+
+kflash gui may also require other dependencies. Install using pip install [...]
+- pyserial
+- beautifulsoup4 (bs)
+- PyQt5
+
